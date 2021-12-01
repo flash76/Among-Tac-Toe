@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Susphabet";
+  src: local("Susphabet"), url(./fonts/Susphabet-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Mogus";
+  src: local("Mogus"), url(./fonts/Mogus.ttf) format("truetype");
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+/* css rule that applies rules in p rule to all div except ones with id title */
+p:not(#title) {
+  margin: 16px;
+  font-family: "Mogus";
+  font-size: 64px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  color: rgb(86, 91, 255);
+  /* center the text */
+  text-align: center;
+}
+
+/* same font as p for title id */
+#title {
+  font-family: "Mogus";
+  font-size: 48px;
+  color: rgb(254, 0, 0);
+}
+
+p:not(#title):hover {
+  color: rgb(255, 255, 255);
+}
